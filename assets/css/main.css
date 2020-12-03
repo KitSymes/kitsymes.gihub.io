@@ -1,4 +1,5 @@
-@import url(fontawesome-all.min.css);
+/*@import url(fontawesome-all.min.css);*/
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 /*
 	Hyperspace by HTML5 UP
@@ -2517,8 +2518,21 @@ input, select, textarea {
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+			font-size: 1.5em;
 		}
 
+		.icon.brands {
+			width: 2.5em;
+			height: 2.5em;
+			display: block;
+			background: #ffffff;
+			border-radius: 100%;
+			color: #312450;
+			text-align: center;
+			line-height: 2.5em;
+			margin: 0 0 1.3em 0;
+		}
+        
 		.icon.major {
 			width: 2.5em;
 			height: 2.5em;
@@ -3256,7 +3270,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #3D1293;
+			background-color: #3D12AA;
 		}
 
 		.wrapper.style3-alt {
