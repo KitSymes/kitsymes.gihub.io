@@ -2563,7 +2563,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #503AB5;
+					color: #5A3AB5;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
@@ -3267,7 +3267,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #503AB5;
+			background-color: #5A3AB5;
 		}
 
 		.wrapper.style2-alt {
@@ -3543,7 +3543,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #171126;
+		background: #120B26;
 		cursor: default;
 		height: 100vh;
 		left: 0;
