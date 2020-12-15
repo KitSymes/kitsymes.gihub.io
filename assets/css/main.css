@@ -2537,6 +2537,22 @@ input, select, textarea {
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
 		}
+
+		.icon.fas.circled:before {
+			font-size: 1.5em;
+		}
+
+		.icon.fas.circled {
+			width: 2.5em;
+			height: 2.5em;
+			display: block;
+			background: #ffffff;
+			border-radius: 100%;
+			color: #312450;
+			text-align: center;
+			line-height: 2.5em;
+			margin: 0 0 1.3em 0;
+		}
         
 		.icon.major {
 			width: 2.5em;
