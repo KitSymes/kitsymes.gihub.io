@@ -2604,6 +2604,9 @@ input, select, textarea {
 	}
 
 		.image img {
+		}
+		
+		.image.circled img {
 			border-radius: 0.25em;
 			display: block;
             display: inline-block;
@@ -2616,9 +2619,9 @@ input, select, textarea {
 			max-width: 40%;
 		}
 
-			.image.left img, .image.right img {
-				width: 50%;
-			}
+		.image.left img, .image.right img {
+			width: 50%;
+		}
 
 		.image.left {
 			float: left;
