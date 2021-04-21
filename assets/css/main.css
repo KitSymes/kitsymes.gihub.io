@@ -2509,11 +2509,12 @@ input, select, textarea {
 		}
 
 		.icon:before {
-			line-height: inherit;
+			line-height: 2.4;
 		}
 
 		.icon.solid:before {
 			font-weight: 900;
+			font-size: 2em;
 		}
 
 		.icon.brands:before {
@@ -2536,6 +2537,10 @@ input, select, textarea {
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
+		}
+		
+		.icon.fas:before {
+			font-size: 2em;
 		}
 
 		.icon.fas.circled:before {
@@ -2643,6 +2648,17 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+			}
+
+		.image.center {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+			text-align: center;
+		}
+			.image.center img {
+				display:inline-block;
+				margin:auto;
 			}
 
 		.image.main {
