@@ -3086,12 +3086,34 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 30em;
 		}
 
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
+			}
+			
+		.spotlights > section > .video {
+			background-position: center center;
+			background-size: cover;
+			border-radius: 0;
+			display: block;
+			position: relative;
+			width: 30em;
+		}
+		
+			.spotlights > section > .video iframe {
+				border-radius: 0;
+				display: block;
+				
+				-moz-transition: opacity 1s ease;
+				-webkit-transition: opacity 1s ease;
+				-ms-transition: opacity 1s ease;
+				transition: opacity 1s ease;
+				background: rgba(49, 36, 80, 0.9);
+				height: 100%;
+				width: 100%;
 			}
 
 			.spotlights > section > .image:before {
@@ -3542,7 +3564,7 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 18em;
+		margin-left: 14em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3569,7 +3591,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 18em;
+		margin-left: 14em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3610,7 +3632,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 18em;
+		width: 14em;
 		z-index: 10000;
 	}
 

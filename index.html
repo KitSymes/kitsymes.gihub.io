@@ -47,7 +47,8 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a class="image"><img src="images/toybox.png" alt="" data-position="top center" /></a>
+							<a class="image" data-src = "https://www.youtube.com/embed/0XNPVE-tJDQ?controls=0autoplay=0" onMouseOver="showVideo(this)"><img src="images/toybox.png" alt="" data-position="top center"/></a>
+							<a class="video"onMouseOut="hideVideo(this)" style="display:none;"><iframe id="youtube"></iframe></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Multiplayer Tower Defence (Unity)</h2>
@@ -72,10 +73,10 @@
 									</br>Also includes a Mario demo required by the University.
 									</br></p>
 									<ul class="actions">
-										<li><a href="https://github.com/KitSymes/SDLProject/releases/latest" class="button primary small"><i class="icon brands fa-github"></i> Download</a></li>
-										<li><a href="https://github.com/KitSymes/SDLProject" class="button small"><i class="icon brands fa-github"></i> Source</a></li>
+										<li><a href="https://github.com/KitSymes/SDL-Emblem/releases/latest" class="button primary small"><i class="icon brands fa-github"></i> Download</a></li>
+										<li><a href="https://github.com/KitSymes/SDL-Emblem" class="button small"><i class="icon brands fa-github"></i> Source</a></li>
 										<li><a href="https://twitter.com/KitSymes/status/1381932177517117440" class="button small"><i class="icon brands fa-twitter"></i> Thread</a></li>
-										<li><a href="SDLProject/" class="button small"><i class="icon fas fa-window-maximize"></i> Details</a></li>
+										<li><a href="https://kitsymes.github.io/SDL-Emblem/" class="button small"><i class="icon fas fa-window-maximize"></i> Details</a></li>
 									</ul>
 								</div>
 							</div>
@@ -113,27 +114,29 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>About Me</h2>
-							<p>I'm a huge video game fan, spending the majority of my time either playing or making them. Here are some of the skills I've picked up in doing so!</p>
+							<p>I'm a huge video game fan, and spend the majority of my time either playing or making them. I also have an interest in Japan and have been studying Japanese for a few years, and enjoy translating things occasionally.
+							</br>Here are some of the skills I've picked up doing the things I love:</p>
 							<div class="features">
 								<section>
 									<span class="icon solid circled fa-code"></span>
 									<h3>Programming Languages</h3>
-									<p>I am confident in C#, C++ and Java, and have also used Python, Visual Basic, SQL and others.</p>
+									<p>I am confident in C#, C++ and Java, and have also used Python, Visual Basic, SQL and others. I am currently studing DX11 and OpenGL.</p>
 								</section>
 								<section>
 									<span class="icon brands circled fa-github"></span>
-									<h3>GitHub</h3>
-									<p>Although I have not used traditional command-line Git, I am comfortable its the concepts and am able to use similar tools such as GitHub Desktop to commit, fork, merge and resolve conflicts.</p>
+									<h3>Version Control</h3>
+									<p>I understand and know how to use the fundamentals of version control, and frequently make use GitHub and GitHubDesktop for my projects.</p>
 								</section>
 								<section>
 									<span class="icon solid brands circled fa-unity"></span>
-									<h3>Unity</h3>
-									<p>I have used the Unity Game Engine for several years now and have played around with many different game types, ranging from classic 2D & 3D, P2P Multiplayer and VR.</p>
+									<h3>Game Engines</h3>
+									<p>I have used the Unity Game Engine for 4+ years now and have played around with many different game types, ranging from classic 2D & 3D, P2P Multiplayer and VR.</p>
 								</section>
 								<section>
 									<span class="icon solid fas circled fa-cubes"></span>
-									<h3>Blender</h3>
-									<p>I use Blender to create models, and like to learn new ways to use its tools, interface and workflow.</p>
+									<h3>Modelling</h3>
+									<p>I create my own models and textures using Blender and other paint software, and understand its tools, interface and workflow.
+									</br>I also have a small <a href = "https://github.com/KitSymes/BlenderAddons">GitHub Repository of custom Blender Addons</a>.</p>
 								</section>
 								<!--<section>
 									<span class="icon solid major fa-desktop"></span>
@@ -189,6 +192,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/image-to-video.js"></script>
 
 	</body>
 </html>
