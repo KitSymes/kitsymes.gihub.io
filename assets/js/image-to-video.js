@@ -16,6 +16,7 @@ function hideVideo(obj)
 	if (!enabled)
 		return;
 	$obj = $(obj);
+	$obj.find("iframe").attr("src", "");
     $obj.hide();
 	$obj.siblings('.image').show();
 }
