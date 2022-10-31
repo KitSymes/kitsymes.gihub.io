@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>URealms Tool</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" type="image/png" href="favicon.png"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Kit Symes' Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#setup" class="scrolly">Setup</a></li>
+						<li><a href="#server" class="scrolly">Server</a></li>
+						<li><a href="#client" class="scrolly">Client</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">URealms Stamina Tracker</h1>
+							<span class="image center"><img src="images/urealmsui/logo.png"/></span>
+							<p>This was my first project involving networking, and in retrospect is <i>incredibly</i> scuffed, however it functions as designed and worked for the private games I ran with friends, so I polished it up and released it into the small community it was made for.</p>
+							<p> It was written in Java, using the Swing GUI framework. Clients connect to one Server from which information is transported through command strings. As it was developed without much planning, there are many things I have learnt from it including what not to do. In particular, the program was written before I had a solid grasp on Object-Oriented design, and makes use of reflection where it definitely should not.</p>
+							<hr />
+							<h2 id="setup">Setup</h2>
+							<p>The program is simplified for general use, made so that Clients have to do no more work than just connecting to a Server, as the person hosting it will have all the resources needed for the game.</br>
+							The host needs to setup Port-Forwarding for port 9002 before selecting Server.</p>
+							<span class="image center"><img src="images/urealmsui/startup.png"/></span>
+							<hr />
+							<h2 id="server">Server</h2>
+							<p>The Server control panel displays all the necessary information and controls in a simple and digestible layout. It is broken down into 6 main sections; bulk actions at the top, 4 individual player sections spread across, and a config popout window.</br>
+							All controls are labelled, and each player has an editable text box next to their controls to give extra help to the host. Player companions are cycled through using another combobox.</p>
+							<span class="image center"><img src="images/urealmsui/server.png"/></span>
+							<p>The config panel is used to hide away some settings that are usually only changed once or twice before use. This involves setting maximum health values and action type/availability.</p>
+							<span class="image center"><img src="images/urealmsui/config.png"/></span>
+							<p>In hindsight, I think information is presented well (although some colours are poorly chosen) and most importantly easy to use on the fly, as the host will be juggling several tasks at once.</br>
+							There definitely is room for improvement, for example companions should be dynamically added rather than confining a hard limit of 3 to one set of buttons and a combobox.</p>
+							<hr />
+							<h2 id="client">Client</h2>
+							<p>The purpose of the client is to be a quick an pretty way for the Players and Audience to check on their stats, as opposed to having to constantly ask each person, interrupting the flow of the game.</br>
+							Upon clicking Client, IP & Port fields are displayed as well as a combobox to select the monitor it will be shown on. Once the Client connects, nothing else has to be done by the Player.</p>
+							<span class="image center"><img src="images/urealmsui/start.png"/></span>
+							<p>The client sits on top of the selected screen above the Taskbar and displays the information recieved from the Server with nice visuals. The portraits selected by the Server are also synced up, although the images are scaled to fixed dimensions which can cause some warping of they are not the same ratio.</p>
+							<span class="image center"><img src="images/urealmsui/client.png"/></span>
+							<a href="https://github.com/KitSymes/URealmsTool" class="button small"><i class="icon brands fa-github"></i> Source</a>
+							<a href="https://github.com/KitSymes/URealmsTool/releases/latest" class="button small"><i class="icon brands fa-github"></i> Download</a>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

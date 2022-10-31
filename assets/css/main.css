@@ -2678,6 +2678,8 @@ input, select, textarea {
 			.image.center img {
 				display:inline-block;
 				margin:auto;
+				max-width: 100%;
+				height:auto;
 			}
 
 		.image.main {
