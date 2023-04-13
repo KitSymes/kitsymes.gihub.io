@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Two Magneteers</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" type="image/png" href="favicon.png"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Kit Symes' Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="#engine" class="scrolly">Engine</a></li>
+						<li><a href="#game" class="scrolly">Game</a></li>
+						<li><a href="#download" class="scrolly">Download</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">The Two Magneteers</h1>
+							<span class="image center"><img src="images/studiosim/titlescreen.png"/></span>
+							<p>
+							This was a 9 person group project for a third year module.
+							<br/>We were tasked to create both an entire Engine and Game from scratch in C++ over 6 weeks.
+							<br/>The group was composed of 5 people on the Games Programming course, and 4 on the Games Development course.
+							</p>
+							
+							<hr />
+							
+							<h2 id="engine">The Engine</h2>
+							<p>
+							The Engine was built from scratch in C++, using only the DirectX Tool Kit, IMGUI and Nlohmann's Json API.
+							<br/>As a team, we wrote up the tasks needed to create a Minimum Viable Product and split the Engine tasks amongst the Programmers.
+							<br/>Our goal was to create an easily extendable Component system that integrates smoothly with the Engine and handles all of the API interactions automatically. Making the Developers' tasks simple was the focus when creating it.
+							</p>
+							<h3>Level Editor</h3>
+							<p>
+							The Level Editor we created provided the Developers with all the tools they needed to quickly build the levels they had designed.
+							<br/>I build a Prefab system to automatically add Game Objects with default values (such as the Player Prefab automatically having the Player Script and an Appearance Component setup to use the Player tile set, etc) that can be cycled through with the <i>Scroll Wheel</i>.
+							<br/>Prefabs can be added using the <i>Right Mouse Button</i>, and grabed using the <i>Left Mouse Button</i>. When an object is grabbed, they can be moved around or be deleted by pressing the <i>Middle Mouse Button</i>.
+							<br/>By using the Inspector window, the level's File Name, Scene ID and Background sprite can be changed. Once Game Objects have been placed, they can be edited by expanding the Game Objects section.
+							<br/>Certain Components provide extra fields that can be edited, such as Appearance Components providing access to their Sprite Texture and Texture Co-ords, and Levers giving ways to change their indivudual functionality.
+							</p>
+							<span class="image center">
+								<img src="images/studiosim/leveleditor1.png"/>
+								<img src="images/studiosim/leveleditor2.png"/>
+							</span>
+							<h3>Personal Contribution</h3>
+							<p>
+							My personal contributions to the project were focused on the Engine's Architecture. I created the game loop and all of the Engine events for Scripts, as well as integrating other people's code into the Component System. I also worked on Data Serialisation, Input Managing, and Audio Managing as well as fixing many bugs.
+							</p>
+							
+							<hr />
+							
+							<h2 id="game">The Game</h2>
+							<p>
+							The Game is a 2 Player Local Co-Op Puzzle Platformer, featuring 5 levels with the goal being to reach the golden goal coin.
+							</p>
+							<h3>Controls</h3>
+							<table>
+								<tr>
+									<th/>
+									<th>Blue</td>
+									<th>Red</td>
+								</tr>
+									<th>Left</th>
+									<td>A</td>
+									<td>Left Arrow Key</td>
+								<tr>
+								</tr>
+									<th>Right</th>
+									<td>D</td>
+									<td>Right Arrow Key</td>
+								<tr>
+								</tr>
+									<th>Jump</th>
+									<td>W</td>
+									<td>Up Arrow Key</td>
+								<tr>
+								</tr>
+									<th>Magnet</th>
+									<td>Q</td>
+									<td>Right Shift</td>
+								<tr>
+								</tr>
+									<th>Interact</th>
+									<td>E</td>
+									<td>Right Control</td>
+								<tr>
+								</tr>
+							</table>
+							<h3>Levels</h2>
+							<div class="box alt">
+								<div class="row gtr-uniform">
+									<div class="col-4"><span class="image fit"><img src="images/studiosim/level1.png"/></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/studiosim/level2.png"/></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/studiosim/level3.png"/></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/studiosim/level4.png"/></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/studiosim/level5.png"/></span></div>
+								</div>
+							</div>
+							
+							<hr />
+							
+							<h2 id="download">Download</h2>
+							<p>The full source code and game is available publicly on GitHub.</p>
+							<a href="https://github.com/StaffsStudioSim1/StudioSimProject/releases/latest" class="button primary small"><i class="icon brands fa-github"></i> Download</a>
+							<a href="https://github.com/StaffsStudioSim1/StudioSimProject/" class="button small"><i class="icon brands fa-github"></i> Source</a>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
