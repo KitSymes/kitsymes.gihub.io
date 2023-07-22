@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Unity C# Networking API</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="icon" type="image/png" href="favicon.png"/>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Kit Symes' Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#features" class="scrolly">Features</a></li>
+						<li><a href="#how-it-works" class="scrolly">How It Works</a></li>
+						<li><a href="#download" class="scrolly">Download</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">C# Networking API for Unity</h1>
+							<p>
+							This proof-of-concept Unity Networking Package was my Final Year Project at University. Created in 6 months of tough research and development, it 
+							deepened my understanding of the history and technology of networking in games. The artefact alongside an 11,000 word dissertation was
+							graded to have achieved 80.8% of the possible marks.
+							</br>
+							The project was to research and create a prototype Multiplayer API that was capable of connecting games across the internet.
+							</p>
+							<hr />
+							
+							<h2 id="features">Features</h2>
+							<p>
+							<ul>
+								<li>Packet Handling</li>
+								<li>Runtime Object Spawning & Synchronisation</li>
+								<li>Ownership & Authority</li>
+								<li>Automatic Variable Synchronisation</li>
+								<li>Client and Server Remote Procedure Calls</li>
+							</ul>
+							</p>
+							<hr />
+							
+							<h2 id="how-it-works">How It Works</h2>
+							<p>
+							This project provides a framework to connect Clients to a Server and allow them to send Packets to eachother, which are then interpreted to create fully functioning multiplayer gameplay by interacting with Unity's systems. Networked Objects are given unique IDs that allow for manipulation across the network.
+							</p>
+							<p>
+							Packets are easily createable and automatically handle serialisation when sending and receiving, and methods are provided to call functions when receiving specified Packet types on both the Client and Server. Serialisation can be overriden when more complex control is needed, for example to compress Packet sizes like the in built Network Transform does.
+							</p>
+							<p>
+							MonoBehaviours can be replaced with NetworkBehaviours, which provide the tools to automatically synchronise variables with the [SyncVar] attribute as well as remotely call functions with the [ClientRPC] and [ServerRPC] attributes.
+							</p>
+							<p>
+							Source Generators were used to provide additional complex functionality, such as efficiently registering custom Packets, generating the code to synchronise networked variables as well as call remote functions.
+							</br>
+							The Source Generator source code can be viewed in the "Source Generators" folder in the GitHub repository.
+							</p>
+							<hr />
+							
+							<h2 id="download">Download</h2>
+							<p>
+							The package is available on my GitHub, where you can also view the source code and the Pong demo project.
+							</p>
+							<a href="https://github.com/KitSymes/Unity-Multiplayer-API/releases/latest" class="button primary small"><i class="icon brands fa-github"></i> Download</a>
+							<a href="https://github.com/KitSymes/Unity-Multiplayer-API/" class="button small"><i class="icon brands fa-github"></i> Source</a>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
