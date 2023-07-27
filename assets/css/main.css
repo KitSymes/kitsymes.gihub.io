@@ -2483,6 +2483,14 @@ input, select, textarea {
 		opacity: 1.0;
 	}
 
+/* Svg */
+
+.svg-unreal-engine:before{
+	content:url(../svg/unreal-engine.svg);
+	width: 2em;
+	height: 2em;
+}
+
 /* Icon */
 
 	.icon {
